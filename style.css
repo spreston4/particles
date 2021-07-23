@@ -1,21 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
-    box-sizing: border-box;
-  }
 
-  canvas {
-    display: block;
-    vertical-align: bottom;
-  } 
-
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-color: #202020;
     background-image: radial-gradient(#797979 2%, #363636 10%, #202020 15%, black 45%);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-position: 50% 50%;
-  } 
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+} 
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
+
+h1 {
+    color: #EEEEEE
+}
+
+h2 {
+    color: #EEEEEE
+}
+
+header {
+    width: 100%;
+    height: 100px;
+
+    position:absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: #000000;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 50px;
+}
+
+#title {
+    width: 100%;
+    height: 55%;
+
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    clip-path: polygon(100%, 0%, 0%, 0%, 50%, 30%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title h1 {
+    font-size: 6em;
+    text-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+
+#title h2 {
+    text-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+  
