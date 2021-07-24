@@ -159,6 +159,7 @@ a:hover {
     display: inline;
 }
 
+
 footer {
     width: 100%
 }
@@ -178,9 +179,7 @@ footer {
     min-height: 100px;
     padding-bottom: 25px;
     background-color: black;
-
     text-align: center;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -216,13 +215,11 @@ footer {
 
 .icon-med {
     font-size: 4em;
-    text-shadow: 0px 5px 15px rgb(0, 0, 0, 1);
 }
 
 .icon-large {
     font-size: 6em;
     margin-right: 100px;
-    text-shadow: 0px 5px 15px rgb(0, 0, 0, 1);
 }
 
 .column-flex {
@@ -237,4 +234,20 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+#proj-selector {
+    width: 100%;
+    justify-content: space-around;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #EEEEEE;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #CCCCCC;
 }
