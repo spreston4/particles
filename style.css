@@ -14,11 +14,13 @@ body {
     background-size: auto;
     background-attachment: fixed;
     background-position: 50% 50%;
+
+    color: #EEEEEE;
 }
 
 canvas {
     display: block;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
     position: fixed;
     z-index: -1;
 } 
@@ -32,17 +34,7 @@ canvas {
  
 } 
 
-h1 {
-    color: #EEEEEE;
-}
 
-h2 {
-    color: #EEEEEE;
-}
-
-p {
-    color: #EEEEEE;
-}
 
 header {
     width: 100%;
@@ -61,15 +53,37 @@ header {
     padding: 0px 50px;
 }
 
+header p {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a:link, nav a:visited, nav a:active {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #EEEEEE;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+nav a:hover {
+    color: #474747;
+}
+
 #title {
     width: 100%;
-    height: 500px;
+    height: 700px;
 
     position: absolute;
     top: 100px;
     left: 0px;
 
-    background: linear-gradient(0deg, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 
     display: flex;
     flex-direction: column;
@@ -78,7 +92,7 @@ header {
 }
 
 #title h1 {
-    font-size: 6em;
+    font-size: 10em;
     text-shadow: 0px 5px 15px rgb(0, 0, 0);
 }
 
@@ -87,6 +101,7 @@ header {
 }
 
 #content {
+    margin: 300px 0px;
     width: 100%;
 
     position: absolute;
@@ -100,7 +115,7 @@ header {
 }
 
 .section {
-    margin: 100px 0px;
+    margin: 200px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -111,16 +126,27 @@ header {
 .section-header {
     width: 100%;
     height: 250px;
-
     background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-
     text-align: center;
+}
+
+.section-header h2 {
+    font-size: 5em;
+    font-weight: 500;
+    text-shadow: 0px 5px 15px rgb(0, 0, 0);
 }
 
 .section-body {
     width: 100%;
+    min-height: 300px;
     background-color: black;
-
     text-align: center;
 }
+
+.section-footer {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+}
+
   
