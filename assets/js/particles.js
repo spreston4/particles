@@ -58,4 +58,6 @@ particlesJS("particles-js", {
     retina_detect: false
 });
 
+const update =  () => {};
+
 requestAnimationFrame(update);
