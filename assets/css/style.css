@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -35,6 +39,10 @@
 }
 
 /* --------------- Tags --------------- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #202020;
@@ -81,10 +89,11 @@ a:link, a:visited, a:active {
     font-weight: bold;
     color: #EEEEEE;
     text-decoration: none;
+    transition: color .4s;
 }
 
 a:hover {
-    color: #afafaf;
+    color: #d1741c;
 }
 
 button {
@@ -93,10 +102,11 @@ button {
     color: #EEEEEE;
     font-size: 1.75em;
     font-weight: bold;
+    transition: color .4s;
 }
 
 button:hover {
-    color: #CCCCCC;
+    color: #d1741c;
 }
 
 /* --------------- IDs --------------- */
@@ -223,14 +233,13 @@ footer {
     height: 300px;
     border-radius: 50% 50%;
     border: solid 5px #EEEEEE;
-    float: left;
-    margin: 35px 35px 25px 0px;
+    float: none;
     box-shadow: inset 0px 5px 15px rgb(0, 0, 0, .3);
 }
 
 .section-body p {
     font-size: 1.75em;
-    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-footer {
@@ -254,14 +263,18 @@ footer {
     height: 45%;
     background-color: #EEEEEE;
     border-radius: 100% 100% 0px 0px;
-    box-shadow: inset 0px 5px 15px rgb(0, 0, 0, .3);
+    box-shadow: inset 0px 5px 15px rgb(0, 0, 0, .4);
+    transition: box-shadow 0.4s ease-in-out;
     border: solid 5px #EEEEEE;
-    
+}
 
+.card-img:hover {
+    box-shadow: inset 0px 5px 15px rgb(0, 0, 0, 0);
 }
 
 .card-img h2 {
-    background-color: #202020;
+    background-color: rgba(0,0,0,.9);
+    font-family: 'Montserrat', sans-serif;
     padding: 10px 25px;
     border-radius: 25px;
 }
@@ -274,8 +287,24 @@ footer {
     border: solid 5px #EEEEEE;
 }
 
-.card-body {
+.card-body p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    margin: 15px;
+}
 
+.card-button-container {
+    position: absolute;
+    bottom: 25px
+}
+.card-button {
+    border: solid 2px #EEEEEE;
+    border-radius: 25px;
+    font-size: .9em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin: 5px 15px;
+    width: 75px;
 }
 
 /* --------------- Scroll Bar --------------- */
@@ -285,12 +314,12 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #CCCCCC;
+    background: #EEEEEE;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: #B3AFB3;
+    background: #d1741c;
 }
 
 ::-webkit-scrollbar-track{ 
