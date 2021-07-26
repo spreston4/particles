@@ -5,6 +5,36 @@
     box-sizing: border-box;
 }
 
+/* --------------- Utilities --------------- */
+.icon {
+    font-size: 2em;
+    margin: 7px;
+}
+
+.icon-med {
+    font-size: 4em;
+}
+
+.icon-large {
+    font-size: 6em;
+    margin-right: 100px;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------- Tags --------------- */
 body {
     margin: 0;
     background-color: #202020;
@@ -21,12 +51,6 @@ canvas {
     display: block;
     position: fixed;
     z-index: -1;
-} 
-
-#particles-js {
-    position: relative;
-    width: 100%;
-    height: 100%;
 } 
 
 header {
@@ -57,12 +81,30 @@ a:link, a:visited, a:active {
     font-weight: bold;
     color: #EEEEEE;
     text-decoration: none;
-    margin: 0px 10px;
 }
 
 a:hover {
     color: #afafaf;
 }
+
+button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #EEEEEE;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #CCCCCC;
+}
+
+/* --------------- IDs --------------- */
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
 
 #title {
     width: 100%;
@@ -101,6 +143,51 @@ a:hover {
     justify-content: center;
 }
 
+#about-me {
+    display: inline;
+}
+
+#proj-selector {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+footer {
+    width: 100%
+}
+
+#footer-top {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 50% 50% 0% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-content {
+    width: 100%;
+    min-height: 100px;
+    padding-bottom: 25px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer-content p {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#card-container {
+    margin-top: 50px;
+}
+
+/* --------------- Classes --------------- */
 .section {
     margin: 200px 0px;
     width: 92.5%;
@@ -138,6 +225,7 @@ a:hover {
     border: solid 5px #EEEEEE;
     float: left;
     margin: 35px 35px 25px 0px;
+    box-shadow: inset 0px 5px 15px rgb(0, 0, 0, .3);
 }
 
 .section-body p {
@@ -155,41 +243,42 @@ a:hover {
     justify-content: center;
 }
 
-#about-me {
-    display: inline;
+.card {
+    width: 300px;
+    height: 400px;
+    margin:25px;  
 }
 
-
-footer {
-    width: 100%
-}
-
-#footer-top {
+.card-img {
     width: 100%;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    border-radius: 50% 50% 0% 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 45%;
+    background-color: #EEEEEE;
+    border-radius: 100% 100% 0px 0px;
+    box-shadow: inset 0px 5px 15px rgb(0, 0, 0, .3);
+    border: solid 5px #EEEEEE;
+    
+
 }
 
-#footer-content {
+.card-img h2 {
+    background-color: #202020;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.card-content {
     width: 100%;
-    min-height: 100px;
-    padding-bottom: 25px;
-    background-color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 55%;
+    position: relative;
+    border-radius: 0px 0px 100% 100%;
+    border: solid 5px #EEEEEE;
 }
 
-#footer-content p {
-    font-size: 1.75em;
-    font-weight: bold;
+.card-body {
+
 }
 
+/* --------------- Scroll Bar --------------- */
 ::-webkit-scrollbar{
     width: 10px;
     height: 10px;
@@ -204,51 +293,9 @@ footer {
     background: #B3AFB3;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{ 
     background: #000000;
 }
 
-.icon {
-    font-size: 2em;
-    margin: 7px;
-}
 
-.icon-med {
-    font-size: 4em;
-}
 
-.icon-large {
-    font-size: 6em;
-    margin-right: 100px;
-}
-
-.column-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.row-flex {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-#proj-selector {
-    width: 100%;
-    justify-content: space-around;
-    margin-bottom: 25px;
-}
-
-button {
-    background-color: rgba(0,0,0,0);
-    border: none;
-    color: #EEEEEE;
-    font-size: 1.75em;
-    font-weight: bold;
-}
-
-button:hover {
-    color: #CCCCCC;
-}
