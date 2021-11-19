@@ -36,6 +36,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* --------------- Tags --------------- */
@@ -199,6 +200,7 @@ footer {
 
 #card-container {
     margin-top: 50px;
+    
 }
 
 /* --------------- Classes --------------- */
@@ -262,19 +264,22 @@ footer {
 }
 
 .card {
-    width: 300px;
+    width: 400px;
     height: 400px;
     margin:25px;  
 }
 
 .card-img {
     width: 100%;
-    height: 45%;
+    height: 50%;
     background-color: #EEEEEE;
     border-radius: 100% 100% 0px 0px;
     box-shadow: inset 0px 25px 10px rgb(0, 0, 0, .4);
     transition: box-shadow 0.4s ease-in-out;
     border: solid 5px #EEEEEE;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-img:hover {
@@ -300,6 +305,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: .9em;
     margin: 15px;
+    text-align: center;
 }
 
 .card-button-container {
@@ -309,8 +315,9 @@ footer {
 .card-button {
     border: solid 2px #EEEEEE;
     border-radius: 25px;
-    font-size: .9em;
+    font-size: 1em !important;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     padding: 10px;
     margin: 5px 15px;
     width: 75px;
@@ -318,6 +325,31 @@ footer {
 
 .card-button:hover {
     border: solid 2px #d1741c;
+}
+
+/* --------------- Card IDs ----------------- */
+#mvc-blog {
+    background-image: url(../images/mvc.png);
+}
+
+#book {
+    background-image: url(../images/book.png);
+}
+
+#team-generator {
+    background-image: url(../images/profile-gen.png);
+}
+
+#weather {
+    background-image: url(../images/weather.png);
+}
+
+#hangman {
+    background-image: url(../images/hangman.png);
+}
+
+#ecomm {
+    background-image: url(../images/ecomm.PNG);
 }
 
 /* --------------- Scroll Bar --------------- */
